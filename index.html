@@ -42,7 +42,9 @@
         <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
         <a href="/bicicletas">Escolha a sua</a>
       </div>
-      <picture><img src="/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta"></picture>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg"><img src="/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta">
+      </picture>
     </div>
   </main>
 
@@ -51,17 +53,17 @@
       <h2>escolha a sua<span>.</span></h2>
       <ul class="bicicletas-lista">
         <li class="bicicleta-item"><a href="/">
-            <div class="bicicleta-mini"><img src="/img/bicicletas/magic-home.jpg" alt="Bicicleta magic might"></div>
+            <div class="bicicleta-mini"><img src="/img/bicicletas/magic-home.jpg" alt="Bicicleta magic might" width="460" height="520"></div>
             <h3>Magic Might</h3>
             <span>R$ 2499</span>
           </a></li>
         <li class="bicicleta-item"><a href="/">
-            <div class="bicicleta-mini"><img src="/img/bicicletas/nimbus-home.jpg" alt="Bicicleta nimbus stark"></div>
+            <div class="bicicleta-mini"><img src="/img/bicicletas/nimbus-home.jpg" alt="Bicicleta nimbus stark" width="460" height="520"></div>
             <h3>Nimbus Stark</h3>
             <span>R$ 4999</span>
           </a></li>
         <li class="bicicleta-item"><a href="/">
-            <div class="bicicleta-mini"> <img src="/img/bicicletas/nebula-home.jpg" alt="Bicicleta magic might"></div>
+            <div class="bicicleta-mini"> <img src="/img/bicicletas/nebula-home.jpg" alt="Bicicleta magic might" width="460" height="520"></div>
             <h3>Nebula Cosmic</h3>
             <span>R$ 3999</span>
           </a></li>
@@ -78,7 +80,7 @@
         <div class="botao"><a href="/">escolha um modelo</a></div>
         <div class="tecnologia-caracteristicas">
           <div class="card">
-            <img src="/img/icones/eletrica.svg" alt="">
+            <img src="/img/icones/eletrica.svg" alt="" width="700" height="1120">
             <h3>Motor Elétrico</h3>
             <p>Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
@@ -97,14 +99,14 @@
     <div class="parceiros">
       <h2>nossos parceiros<span>.</span></h2>
       <ul class="parceiros-lista">
-        <li><img src="/img/parceiros/caravan.svg" alt="Caravan"></li>
-        <li><img src="/img/parceiros/ranek.svg" alt="Ranek"></li>
-        <li><img src="/img/parceiros/handel.svg" alt="Handel"></li>
-        <li><img src="/img/parceiros/dogs.svg" alt="Dogs"></li>
-        <li><img src="/img/parceiros/lescone.svg" alt="LeScone"></li>
-        <li><img src="/img/parceiros/flexblog.svg" alt="FlexBlog"></li>
-        <li><img src="/img/parceiros/wildbeast.svg" alt="Wildbeast"></li>
-        <li><img src="/img/parceiros/surfbot.svg" alt="surfbot"></li>
+        <li><img src="/img/parceiros/caravan.svg" alt="Caravan" width="140" height="38"></li>
+        <li><img src="/img/parceiros/ranek.svg" alt="Ranek" width="140" height="38"></li>
+        <li><img src="/img/parceiros/handel.svg" alt="Handel" width="140" height="38"></li>
+        <li><img src="/img/parceiros/dogs.svg" alt="Dogs" width="140" height="38"></li>
+        <li><img src="/img/parceiros/lescone.svg" alt="LeScone" width="140" height="38"></li>
+        <li><img src="/img/parceiros/flexblog.svg" alt="FlexBlog" width="140" height="38"></li>
+        <li><img src="/img/parceiros/wildbeast.svg" alt="Wildbeast" width="140" height="38"></li>
+        <li><img src="/img/parceiros/surfbot.svg" alt="surfbot" width="140" height="38"></li>
       </ul>
     </div>
   </section>
@@ -158,6 +160,39 @@
     </div>
   </section>
 
+  <footer class="footer-bg">
+    <div class="footer">
+      <img src="/img/bikcraft.svg" alt="Bikcraft" width="136" height="32">
+
+      <div class="footer-contato">
+        <h3> contato</h3>
+        <ul>
+          <li>+55 21 9999-9999</li>
+          <li>contato@bikcraft.com</li>
+          <li>Rua Ali Perto, 42 - Botafogo</li>
+          <li>Rio de Janeiro - RJ</li>
+        </ul>
+        <div class="footer-redes">
+          <a href="./"><img src="/img/redes/instagram.svg" alt="Instagram" width="32" height="32"> </a>
+          <a href="./"><img src="/img/redes/facebook.svg" alt="facebook" width="32" height="32"> </a>
+          <a href="./"><img src="/img/redes/youtube.svg" alt="Youtube" width="32" height="32"> </a>
+        </div>
+      </div>
+      <div class="footer-informacoes">
+        <h3>informações</h3>
+        <nav>
+          <ul>
+            <li><a href="./">Bicicletas</a></li>
+            <li><a href="./">Seguros</a></li>
+            <li><a href="./">contato</a></li>
+            <li><a href="./">Termos e Condições</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copyright">Bikcraft © Alguns direitos reservados.</p>
+    </div>
+
+  </footer>
 </body>
 
 </html>
