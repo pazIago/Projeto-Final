@@ -78,8 +78,3 @@
   line-height: 1.33;
 }
 
-@media (max-width: 1200px) {
-  .escolha h2 {
-    font-size: 3rem;
-  }
-}
