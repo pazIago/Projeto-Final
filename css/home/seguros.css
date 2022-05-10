@@ -1,0 +1,104 @@
+.seguros-bg {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.seguros {
+  padding: 60px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.seguros h2 {
+  margin-bottom: 60px;
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.seguros h2 span {
+  color: #ffbb00;
+}
+
+.seguros .seguros-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros-card > li {
+  background-color: #000000;
+  padding: 32px 32px 32px 64px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+}
+
+.conteudo h3 {
+  font-size: 2.25rem;
+  line-height: 1.33;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.prata h3 {
+  color: #9c9c9c;
+}
+
+.ouro h3 {
+  color: #ffbb00;
+}
+
+.conteudo li + li {
+  margin-top: 20px;
+}
+
+.conteudo li {
+  display: flex;
+  align-items: center;
+  font-family: roboto;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: 500;
+  position: relative;
+}
+
+.conteudo li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  display: block;
+  background-image: url(/img/icones/lista.svg);
+  position: absolute;
+  left: -21px;
+  top: 5px;
+}
+
+.conteudo li:last-child {
+  margin-bottom: 32px;
+}
+
+.seguros a {
+  padding: 16px 32px;
+  background-color: #2e2e2e;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.seguros-card .valor {
+  font-size: 2.25rem;
+  line-height: 1.33;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.seguros-card .valor::after {
+  content: "mensal";
+  font-size: 0.75rem;
+  color: #9c9c9c;
+  line-height: 1.33;
+}

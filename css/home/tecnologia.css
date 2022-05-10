@@ -1,0 +1,115 @@
+.tecnologia-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 120px #ffffff, inset 0 -120px #ffffff;
+  margin-bottom: 60px;
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.tecnologia-conteudo > span {
+  margin-bottom: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-family: roboto;
+  color: #b2b2b2;
+  font-weight: 500;
+}
+
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+  font-size: 4rem;
+  line-height: 1.125;
+  max-width: 1200px;
+}
+
+.tecnologia-conteudo h2 span {
+  color: #ffbb00;
+}
+
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+.tecnologia-conteudo > .botao {
+  display: inline-block;
+  margin-bottom: 80px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffbb00;
+  position: relative;
+}
+
+.tecnologia-conteudo > .botao::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+.tecnologia-conteudo > .botao:hover {
+  color: #ffffff;
+}
+
+.tecnologia-conteudo {
+  padding: 180px 0px;
+  align-content: center;
+}
+
+.tecnologia .img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tecnologia .img > img {
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecnologia-caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-caracteristicas .card {
+  display: grid;
+  gap: 8px;
+}
+
+.tecnologia-caracteristicas img {
+  width: 24px;
+}
+
+.tecnologia-caracteristicas h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.tecnologia-caracteristicas p {
+  font-family: roboto;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
