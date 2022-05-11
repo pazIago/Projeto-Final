@@ -1,18 +1,13 @@
 .introducao-bg {
-  background: #000000;
-  color: #ffffff;
-  box-shadow: inset 0 -120px #ffffff;
-  margin-bottom: 60px;
+  background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 160px left 20px;
+  box-shadow: inset 0 -120px var(--cor-0);
 }
 
 .introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding: 0px 20px;
-  margin: 0 auto;
 }
 
 .introducao-conteudo {
@@ -21,6 +16,7 @@
 }
 
 .introducao img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
@@ -28,34 +24,30 @@
 
 .introducao h1 {
   margin-bottom: 32px;
-  font-size: 4rem;
-  line-height: 1.125;
-}
-
-.introducao h1 span {
-  color: #ffbb00;
 }
 
 .introducao p {
   margin-bottom: 20px;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #b2b2b2;
 }
 
-.introducao a {
-  padding: 16px 32px;
-  display: inline-block;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  border-radius: 4px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  color: #320;
-  font-size: 1.125rem;
-  line-height: 1.33;
-  font-weight: bold;
-}
-
-.introducao a:hover {
-  background: linear-gradient(#ffb60d, #e59317);
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--cor-11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    margin-bottom: 16px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
 }

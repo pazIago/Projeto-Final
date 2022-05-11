@@ -1,147 +1,103 @@
-.ativo a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: #ffffff;
-  margin-top: 4px;
-  position: absolute;
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
-.bicicletas-intro-bg {
-  background-color: #111111;
-}
-
-.bicicletas-intro {
-  padding: 60px 0px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: url(/img/dec/top-right.svg) no-repeat right 0 top 40px;
-}
-
-.bicicletas-intro h1 {
-  font-size: 4rem;
-  line-height: 1.125;
-  color: #ffffff;
-}
-
-.bicicletas-intro span {
-  color: #ffbb00;
-}
-
-.bicicletas-intro p {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #b2b2b2;
-}
-
-.bicicleta-img {
-  border-radius: 4px;
-  position: relative;
-}
-
-.bicicleta-img > span {
-  position: absolute;
-  color: #ffffff;
-  top: 20px;
-  right: 0px;
-  padding: 8px 16px 8px 8px;
-  background-color: #000000;
-  border-radius: 5px 0px 0px 5px;
-}
-
-.bicicletas-item {
+.bicicletas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
-.bicicleta-conteudo {
+.bicicletas-imagem {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+}
+
+.bicicletas-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: var(--cor-12);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-content: start;
 }
 
-.bicicleta-conteudo h2::before {
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
   content: "";
+  display: block;
   width: 12px;
   height: 8px;
+  background-color: var(--cor-p1);
   margin-bottom: 8px;
-  display: block;
-  background-color: #ffbb00;
-}
-.bicicleta-conteudo h2 {
-  font-size: 2rem;
-  grid-column: 1/-1;
-  margin-bottom: 20px;
-  line-height: 1.25;
-  color: #111111;
 }
 
-.bicicleta-conteudo p {
-  grid-column: 1/-1;
-  font-size: 1rem;
+.bicicletas p {
   margin-bottom: 32px;
-  font-family: roboto, sans-serif;
-  color: #595959;
 }
 
-.bicicletas-vantagens li {
-  display: flex;
-  align-items: center;
-  font-size: 1.125rem;
-  gap: 8px;
-  color: #595959;
-}
-
-.bicicletas-vantagens li + li {
-  margin-top: 16px;
-}
-
-.bicicleta-conteudo a {
-  min-width: auto;
-  padding: 16px 32px;
-  background: linear-gradient(#ffbf00, #f2a50c);
+.bicicletas a {
   place-self: end;
+}
+
+.bicicletas li {
   display: flex;
-  max-width: max-content;
   align-items: center;
-  border-radius: 4px;
-  justify-content: center;
-  color: #332200;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.33;
 }
 
-.bicicleta-conteudo a:hover {
-  background: linear-gradient(#ffb60d, #e59317);
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
 }
 
-.bicicleta-conteudo a img {
-  width: 18px;
-  height: 12px;
-  margin-left: 12px;
+.bicicletas-conteudo img {
+  width: 24px;
+  margin-right: 8px;
 }
 
-.bicicleta-lista > :nth-child(even) h2 {
-  color: #ffffff;
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
-.bicicleta-lista > :nth-child(even) p,
-.bicicleta-lista > :nth-child(even) li {
-  color: #b2b2b2;
-}
-
-.bicicleta-lista > li:nth-child(even) {
-  background: linear-gradient(to right, #ffffff 30%, #111111 0%);
-}
-
-.bicicleta-lista > li > .bicicletas-item {
-  background: url(/img/dec/top-right.svg) no-repeat right 20px top 40px;
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicicletas a {
+    place-self: start;
+  }
 }

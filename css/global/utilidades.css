@@ -1,0 +1,22 @@
+.titulo {
+  font-size: 4rem;
+  line-height: 1.125;
+  
+}
+
+.botao {
+  padding: 16px 32px;
+  display: inline-block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #320;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
