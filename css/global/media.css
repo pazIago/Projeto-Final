@@ -8,8 +8,16 @@
   .introducao h1 {
     font-size: 2.5rem;
   }
+
   .introducao p {
     font-size: 1.125rem;
+  }
+
+  .bicicletas-intro p {
+    font-size: 1.125rem;
+  }
+  .bicicletas-intro h1 {
+    font-size: 2.5rem;
   }
 
   .escolha h2 {
@@ -50,6 +58,35 @@
     margin-bottom: 16px;
   }
 
+  .bicicletas-intro h1 {
+    font-size: 2rem;
+  }
+
+  .bicicletas-intro p {
+    font-size: 1rem;
+    text-transform: none;
+  }
+
+  .bicicletas-item {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-lista > li > .bicicletas-item {
+    background: none;
+  }
+  .bicicleta-lista > li:nth-child(even) {
+    background: #111111;
+  }
+
+  .bicicletas-vantagens {display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px;}
+
+  .bicicletas-vantagens li + li {
+    margin-top: 0px;
+  }
+
+  .bicicleta-conteudo a {place-self: start;}
+
+  .bicicleta-conteudo {grid-template-columns: 1fr;}
   .tecnologia-bg {
     box-shadow: none;
   }
@@ -163,4 +200,9 @@
   .footer {
     grid-template-columns: 1fr;
   }
+  .bicicletas-vantagens li {font-size: 1rem;}
+
+  .bicicleta-conteudo a {padding:  12px 16px;}
 }
+
+

@@ -32,10 +32,13 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.bicicleta-item a {display: block; min-width: 280px;}
+.bicicletas-lista > .bicicleta-item a {
+  display: block;
+  min-width: 280px;
+}
 
 .bicicleta-mini {
-   margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .escolha img {
@@ -72,9 +75,8 @@
 
 .bicicleta-item span {
   padding-left: 20px;
-  font-family: roboto,sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.33;
 }
-

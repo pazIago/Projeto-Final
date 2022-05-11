@@ -8,25 +8,62 @@
   position: absolute;
 }
 
-.bicicleta-lista > li {
+.bicicletas-intro-bg {
+  background-color: #111111;
+}
+
+.bicicletas-intro {
+  padding: 60px 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url(/img/dec/top-right.svg) no-repeat right 0 top 40px;
+}
+
+.bicicletas-intro h1 {
+  font-size: 4rem;
+  line-height: 1.125;
+  color: #ffffff;
+}
+
+.bicicletas-intro span {
+  color: #ffbb00;
+}
+
+.bicicletas-intro p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.bicicleta-img {
+  border-radius: 4px;
+  position: relative;
+}
+
+.bicicleta-img > span {
+  position: absolute;
+  color: #ffffff;
+  top: 20px;
+  right: 0px;
+  padding: 8px 16px 8px 8px;
+  background-color: #000000;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.bicicletas-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.bicicleta-img {
-  border-radius: 4px;
-}
-
-.bicicleta-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
 .bicicleta-conteudo {
   display: grid;
-  grid-template-columns: 1fr 1fr; align-content: start;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
 }
 
 .bicicleta-conteudo h2::before {
@@ -47,13 +84,13 @@
 
 .bicicleta-conteudo p {
   grid-column: 1/-1;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 32px;
   font-family: roboto, sans-serif;
   color: #595959;
 }
 
-.bicicleta-vantagens li {
+.bicicletas-vantagens li {
   display: flex;
   align-items: center;
   font-size: 1.125rem;
@@ -61,10 +98,9 @@
   color: #595959;
 }
 
-.bicicleta-vantagens li + li {
+.bicicletas-vantagens li + li {
   margin-top: 16px;
 }
-
 
 .bicicleta-conteudo a {
   min-width: auto;
@@ -83,9 +119,29 @@
   line-height: 1.33;
 }
 
+.bicicleta-conteudo a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
 .bicicleta-conteudo a img {
   width: 18px;
   height: 12px;
   margin-left: 12px;
 }
 
+.bicicleta-lista > :nth-child(even) h2 {
+  color: #ffffff;
+}
+
+.bicicleta-lista > :nth-child(even) p,
+.bicicleta-lista > :nth-child(even) li {
+  color: #b2b2b2;
+}
+
+.bicicleta-lista > li:nth-child(even) {
+  background: linear-gradient(to right, #ffffff 30%, #111111 0%);
+}
+
+.bicicleta-lista > li > .bicicletas-item {
+  background: url(/img/dec/top-right.svg) no-repeat right 20px top 40px;
+}
