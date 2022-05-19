@@ -21,7 +21,7 @@ function activeProduct(parameter) {
   if (element) {
     element.checked = true;
   }
- }
+}
 
 parameters.forEach(activeProduct);
 
@@ -46,3 +46,19 @@ questions.forEach(evntQuestion);
 
 //galeria de bicicletas
 
+const images = document.querySelectorAll(".bicicleta-imagens img");
+const galeria = document.querySelector(".bicicleta-imagens");
+
+function changeImg(event) {
+  const image = event.currentTarget;
+  const media = matchMedia("(min-width: 1000px").matches;
+  if (media) {
+    galeria.prepend(image);
+  }
+}
+
+function eventGalery(image) {
+  image.addEventListener("click", changeImg);
+}
+
+images.forEach(eventGalery);
